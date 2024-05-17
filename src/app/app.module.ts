@@ -5,19 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { favoriteReducer } from './states/favorite-product/reducer/app.reducer';
-import { ProductsSuggestedComponent } from "./remotes-components/products-suggested/products-suggested.component";
+import { ProductsSuggestedComponent } from "./components/remote/products-suggested/products-suggested.component";
+import { HeaderComponent } from './components/local/header/header.component';
+import { ErrorModule } from './error/error.module';
+import { LoadingComponent } from './components/local/loading/loading.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
         AppComponent,
+        HeaderComponent,
+        LoadingComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
+        ErrorModule,
         StoreModule.forRoot({ favorite: favoriteReducer }),
-        ProductsSuggestedComponent
+        ProductsSuggestedComponent,
+        HttpClientModule
     ]
 })
 export class AppModule { }

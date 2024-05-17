@@ -4,7 +4,6 @@ const HostConfigModuleFederationPlugin = withModuleFederationPlugin({
 
   remotes: {
     "products": "http://localhost:4201/remoteEntry.js",    
-    "products-suggested": "http://localhost:4202/remoteEntry.js",    
   },
 
   shared: {

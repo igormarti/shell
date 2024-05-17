@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #DA70D6;
+    color: #fff;
+
+    li{
+        list-style-type: none;
+        color: #fff;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        margin: 5px;
+    }
+
+    .header-logo{
+        flex: 15%;
+        padding: 10px;
+    }
+    .header-menu {
+        flex: 50%;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    .header-perfil{
+        flex: 35%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
