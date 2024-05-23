@@ -19,14 +19,17 @@
         padding: 10px;
     }
     .header-menu {
-        flex: 50%;
+        flex: 60%;
         display: flex;
         justify-content: space-evenly;
 
     }
     .header-perfil{
-        flex: 35%;
+        flex: 25%;
         display: flex;
         justify-content: flex-end;
+        li{
+            margin: 5px;
+        }
     }
 }
